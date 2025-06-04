@@ -17,6 +17,8 @@ A cross-platform, local-first CLI journaling and tagging tool for developers, an
 
 ## 📦 Install
 
+- Disclaimer: This project is mostly focused for UNIX based Operating systems, I have not fully confirmed if everything works correctly on Windows 10/11 though all of the code is meant to work despite OS as long as you install with the correct script.
+
 
 ### 🔧 Clone the Repo
 
@@ -114,6 +116,7 @@ SQLite DB is stored in:
 
 ## Roadmap
 
+- Setup package manager for Windows and Linux instead of manual install
 - JSON or Markdown export
 - Tag autocomplete
 - UI viewer (TUI or GUI)
