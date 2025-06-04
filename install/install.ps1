@@ -52,9 +52,10 @@ $yn = Read-Host "Do you want to continue? (y/n)"
 if ($yn -match '^[Yy]') {
     Write-Host "Copying $SourceScript to $WrapperPath..."
     Copy-Item -Path $SourceScript -Destination $WrapperPath -Force
+    # On Windows, .bat files are executable by default, but warn if not
     if (Test-Path $WrapperPath) {
         Write-Host "Done. You can now run '$AliasName' from anywhere."
-        Write-Host "Ensure MicrosoftApps is in your PATH."
+        Write-Host "Ensure MicrosoftApps is in your PATH. If you get a permission error, check file properties and unblock if needed."
     } else {
         Write-Host "Failed to create shortcut. Please check permissions."
     }

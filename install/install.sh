@@ -63,6 +63,8 @@ echo "Target script: $SCRIPT_PATH"
 read -p "Do you want to continue? (y/n): " yn
 case $yn in
     [Yy]* ) 
+        echo "Ensuring $SCRIPT_PATH is executable..."
+        chmod +x "$SCRIPT_PATH"
         echo "Linking $APP_NAME to $SYMLINK_PATH..."
         sudo ln -sf "$SCRIPT_PATH" "$SYMLINK_PATH"
         if [ $? -eq 0 ]; then
