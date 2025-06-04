@@ -91,17 +91,20 @@ Full uninstall (includes DB) Linux
 ## Structure
 
 brainlogs/
-    core/
-        __init__.py
-        cli.py
-        config.py
-        db.py
-    install/
-        install.ps1
-        install.sh
-    .gitignore
-    main.py
-    README.md
+
+ - core/
+    - __init__.py --removed
+    - cli.py
+    - config.py
+    - db.py
+ - install/
+    - install.ps1
+    - install.sh
+ - .gitignore
+ - main.py
+ - README.md
+ - run.bat
+ - run.sh
 
 SQLite DB is stored in:
 
