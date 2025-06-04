@@ -164,3 +164,20 @@ Modify `core/config.py` to change DB path or expand functionality.
 ## Author
 
 Made by **GuyWithAFrownyFace** as a learning project to sharpen Python, CLI, and cross-platform scripting skills
+
+## ⚙️ Dependencies
+
+| Platform | Requirements | 
+|----------|--------------|
+| **All Systems** | Python 3.8+ ([Install Guide](https://www.python.org/downloads/)) |
+| **Windows Only** | PowerShell 5.1+ (Preinstalled on Win10/11) |
+| **Linux/macOS** | Standard shell (bash/zsh) |
+<sub>💡 Note: No additional libraries required - all dependencies ship with Python</sub>
+
+**Verify installations:**
+```bash
+# Python
+python3 --version
+
+# PowerShell (Windows)
+$PSVersionTable.PSVersion
