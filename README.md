@@ -65,7 +65,7 @@ brlogs -r linux
 Uninstall shortcut (Windows)
 
 ```powershell
-./install/install.ps1 uninstall
+.\install\install.ps1 uninstall
 ```
 
 Uninstall symlink (Linux)
@@ -77,7 +77,7 @@ Uninstall symlink (Linux)
 Full uninstall (includes DB) Windows
 
 ```powershell
-./install/install.ps1 purge
+.\install\install.ps1 purge
 ```
 
 Full uninstall (includes DB) Linux
