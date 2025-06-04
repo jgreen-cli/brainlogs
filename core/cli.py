@@ -5,15 +5,15 @@ from . import db
 def run():
     args = sys.argv[1:]
 
-    if not args:
+    if not args: # if args are not present list usage
         print("Usage:")
         print("  brainlog <message> [-tags tag1 tag2 ...]")
         print("  brainlog -r [tag]")
         return
 
     # READ MODE
-    if args[0] in ("-r", "--read"):
-        filter_tag = args[1] if len(args) > 1 else None
+    if args[0] in ("-r", "--read"): # check for tags
+        filter_tag = args[1] if len(args) > 1 else None 
         logs = db.get_logs(filter_tag)
         if not logs:
             print("No logs found." if not filter_tag else f"No logs found with tag '{filter_tag}'")
