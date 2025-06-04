@@ -17,7 +17,39 @@ A cross-platform, local-first CLI journaling and tagging tool for developers, an
 
 ## 📦 Install
 
-- Disclaimer: This project is mostly focused for UNIX based Operating systems, I have not fully confirmed if everything works correctly on Windows 10/11 though all of the code is meant to work despite OS as long as you install with the correct script.
+## ⚠️ Project Status & Important Notes
+
+**Development Stage Notice:**  
+This project is currently in its **early experimental phase** (v0.x). While functional for basic use, please be aware that:
+- Core functionality is stable but edge cases may exist
+- Database schema may evolve in future versions
+- Windows support is preliminary and needs community validation
+
+**Platform Support:**  
+| System | Support Level | Testing Status |
+|--------|--------------|----------------|
+| Linux  | Primary      | Basic validation complete |
+| macOS  | Community    | Limited testing |
+| Windows| Experimental | Installation verified only |
+
+**Security Advisory:**  
+🔐 **Important:** All journal entries are stored locally in plaintext format.  
+- Do **not** store sensitive information (passwords, credentials, etc.)
+- Consider enabling full-disk encryption on your system
+- Be mindful of system access permissions
+
+**Data Management:**  
+- Maintain regular backups of your `~/.brainlogs/` directory
+- The `purge` uninstall option will permanently delete all logs
+- No automatic backup or versioning exists in current version
+
+**Contribution & Feedback:**  
+We welcome constructive issue reports and feedback via our [GitHub Issues](https://github.com/GuyWithAFrownyFace/brainlogs/issues) page. Please include:
+- Your operating system
+- Steps to reproduce any issues
+- Suggestions for improvements
+
+*This software is provided "as-is" without warranty. Users assume responsibility for their data.*
 
 
 ### 🔧 Clone the Repo
@@ -32,6 +64,7 @@ Linux / macOS
 ```bash
 chmod +x install/install.sh
 ./install/install.sh
+# must be inside of brainlogs directory
 ```
 
 Windows (PowerShell)
