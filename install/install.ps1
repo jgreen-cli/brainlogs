@@ -1,11 +1,8 @@
 $AliasName = "brlogs"
-$ScriptDir = Split-Path -Parent $MyInvocation.MyCommand.Definition
+$RepoDir = "$PSScriptRoot\.."
 $WrapperPath = "$env:USERPROFILE\AppData\Local\Microsoft\WindowsApps\$AliasName.bat"
+$SourceScript = "$RepoDir\run.bat"
 
-# Points to the new run.ps1
-$TargetScript = "$ScriptDir\..\run.ps1"
-$WrapperContent = "@echo off`npowershell -ExecutionPolicy Bypass -File `"$TargetScript`" %*"
-
-Set-Content -Path $WrapperPath -Value $WrapperContent -Encoding ASCII
-Write-Host "✅ Alias '$AliasName' installed at $WrapperPath"
-Write-Host "ℹ️ Make sure '$env:USERPROFILE\AppData\Local\Microsoft\WindowsApps' is in your PATH"
+Copy-Item -Path $SourceScript -Destination $WrapperPath -Force
+Write-Host "Alias '$AliasName' installed at $WrapperPath"
+Write-Host "Ensure MicrosoftApps is in your PATH"
