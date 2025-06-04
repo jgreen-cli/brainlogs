@@ -42,7 +42,7 @@ This project is currently in its **early experimental phase** (v0.x). While func
 - No automatic backup or versioning exists in current version
 
 **Contribution & Feedback:**  
-We welcome constructive issue reports and feedback via our [GitHub Issues](https://github.com/GuyWithAFrownyFace/brainlogs/issues) page. Please include:
+We welcome constructive issue reports and feedback via my [GitHub Issues](https://github.com/GuyWithAFrownyFace/brainlogs/issues) page. Please include:
 - Your operating system
 - Steps to reproduce any issues
 - Suggestions for improvements
@@ -60,6 +60,8 @@ git clone https://github.com/GuyWithAFrownyFace/brainlogs.git
 cd brainlogs
 ```
 
+# Add to Permissions(chmod) Linux or PATH Windows
+
 Linux / macOS
 
 ```bash
@@ -75,7 +77,7 @@ Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
 .\install\install.ps1
 ```
 
-This will add an alias (**brlogs**) to your shell profile so you can run logs from anywhere.
+This will add an alias (**brlogs**) to your shell profile so you can run logs from anywhere. Restart terminal after adding it to PATH (once you run the above script if using windows it is added)
 
 
 ## Usage
