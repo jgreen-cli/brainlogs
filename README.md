@@ -15,8 +15,6 @@ A cross-platform, local-first CLI journaling and tagging tool for developers, an
 - ✅ Includes optional install scripts to create command aliases (e.g., `brlogs` or `bl`)
 
 
-## 📦 Install
-
 ## ⚠️ Project Status & Important Notes
 
 **Development Stage Notice:**  
@@ -50,6 +48,9 @@ We welcome constructive issue reports and feedback via our [GitHub Issues](https
 - Suggestions for improvements
 
 *This software is provided "as-is" without warranty. Users assume responsibility for their data.*
+
+
+## 📦 Install
 
 
 ### 🔧 Clone the Repo
@@ -165,7 +166,7 @@ Modify `core/config.py` to change DB path or expand functionality.
 
 Made by **GuyWithAFrownyFace** as a learning project to sharpen Python, CLI, and cross-platform scripting skills
 
-## ⚙️ Dependencies
+## Dependencies
 
 | Platform | Requirements | 
 |----------|--------------|
