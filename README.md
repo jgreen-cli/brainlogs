@@ -1,9 +1,8 @@
-# 🧠 logs
+# 🧠 Logs
 
  A cross-platform, local-first CLI journaling and tagging tool for developers, and note-takers.
 
  **brainlogs** helps you quickly log thoughs, progress, events, or tasks directly from the terminal. Logs are stored in a lightweight SQLite database for fast access, filtering, and future expansion into full UIs or export tools.
-
 
 
 ## Features
@@ -17,6 +16,7 @@
 
 
 ## 📦 Install
+
 
 ### 🔧 Clone the Repo
  ```bash
@@ -41,32 +41,43 @@
 
  This will add an alias (**brlogs**) to your shell profile so you can run logs from anywhere.
 
+
 ## Usage
 
  Create a log
-
+ ```bash
  brlogs Finished setting up server -tags progress linux
-
+ ```
  View all logs
-
+ ```bash
  brlogs -r
-
+ ```
  Filter by tag
-
+ ```bash
  brlogs -r linux
+ ```
+
 
 ## Structure
 
  brainlogs/
- ├── core/           # Core modules (config, db, CLI logic)
- ├── install/        # Install scripts for alias setup
- ├── main.py         # Entry point
- └── .gitignore
+    core/
+        __init__.py
+        cli.py
+        config.py
+        db.py
+    install/
+        install.ps1
+        install.sh
+    .gitignore
+    main.py
+    README.md
 
  SQLite DB is stored in:
 
  Linux/macOS ~/.brainlogs/brainlogs.db
  Windows C:\Users\<Username>\.branlogs\brainlogs.db
+
 
 ## Roadmap
 
@@ -75,14 +86,12 @@
  UI viewer (TUI or GUI)
  Cloud sync or encrypted backup (optional)
 
+
 ## For Developers
 
  Modify core/config.py to change DB path or expand functionality
 
+
 ## Author
 
- Made by [GuyWithAFrownyFace] as a learning project to sharpen Python, CLI, and cross-platform scripting skills
-
-
-
-
+ Made by **GuyWithAFrownyFace** as a learning project to sharpen Python, CLI, and cross-platform scripting skills
