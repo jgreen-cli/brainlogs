@@ -164,7 +164,7 @@ Modify `core/config.py` to change DB path or expand functionality.
 
 ## Author
 
-Made by **GuyWithAFrownyFace** as a learning project to sharpen Python, CLI, and cross-platform scripting skills
+Made by me **GuyWithAFrownyFace** as a learning project to sharpen Python, CLI, and cross-platform scripting skills
 
 ## Dependencies
 
