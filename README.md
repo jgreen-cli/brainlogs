@@ -36,7 +36,7 @@ Windows (PowerShell)
 
 ```powershell
 Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
-./install/install.ps1
+.\install\install.ps1
 ```
 
 This will add an alias (**brlogs**) to your shell profile so you can run logs from anywhere.
