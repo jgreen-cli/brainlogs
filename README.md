@@ -196,13 +196,16 @@ $PSVersionTable.PSVersion
 
 ```bash
 brlogs This is a test message -t test debug
-# this will output 
+# this will output
+#Log added successfully: 'This is a test message'
+#✅ Log saved: "This is a test message"
+#   → Tags: test, debug 
 ```
-![alt text](image.png)
+
 
 ```bash
 brlogs -r debug
-# this will output
+# this will output any log that has the tag "debug" you can omit the tag after -r if you want to print the contents of all notes
 ```
-![alt text](image-1.png)
+
 
