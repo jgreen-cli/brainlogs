@@ -1,8 +1,8 @@
 # 🧠 Logs
 
-A cross-platform, local-first CLI journaling and tagging tool for developers, and note-takers.
+A cross-platform, local-first CLI journaling tool for developers, and note-takers alike.
 
-**brainlogs** helps you quickly log thoughs, progress, events, or tasks directly from the terminal. Logs are stored in a lightweight SQLite database for fast access, filtering, and future expansion into full UIs or export tools.
+**BrainLogs** helps you quickly log thoughts, progress, events, or tasks directly from the terminal. Logs are stored in a lightweight local SQLite database for fast access, filtering, and future expansion into full UIs or export tools.
 
 
 ## Features
@@ -85,7 +85,7 @@ This will add an alias (**brlogs**) to your shell profile so you can run logs fr
 Create a log
 
 ```bash
-brlogs Finished setting up server -tags progress linux
+brlogs Finished setting up server -t progress linux
 ```
 
 View all logs
@@ -175,12 +175,34 @@ Made by me **GuyWithAFrownyFace** as a learning project to sharpen Python, CLI, 
 | **All Systems** | Python 3.8+ ([Install Guide](https://www.python.org/downloads/)) |
 | **Windows Only** | PowerShell 5.1+ (Preinstalled on Win10/11) |
 | **Linux/macOS** | Standard shell (bash/zsh) |
+
 <sub>💡 Note: No additional libraries required - all dependencies ship with Python</sub>
 
 **Verify installations:**
 ```bash
 # Python
 python3 --version
-
+```
+```powershell
 # PowerShell (Windows)
 $PSVersionTable.PSVersion
+```
+
+**Additional informaton**
+
+- Currently there are only 2 flags (-r and -t)
+
+- -r being (ReadMode) and -t being (Tag)
+
+```bash
+brlogs This is a test message -t test debug
+# this will output 
+```
+![alt text](image.png)
+
+```bash
+brlogs -r debug
+# this will output
+```
+![alt text](image-1.png)
+
