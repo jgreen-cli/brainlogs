@@ -42,7 +42,7 @@ This project is currently in its **early experimental phase** (v0.x). While func
 - No automatic backup or versioning exists in current version
 
 **Contribution & Feedback:**  
-We welcome constructive issue reports and feedback via my [GitHub Issues](https://github.com/GuyWithAFrownyFace/brainlogs/issues) page. Please include:
+We welcome constructive issue reports and feedback via my [GitHub Issues](https://github.com/jgreen-cli/brainlogs/issues) page. Please include:
 - Your operating system
 - Steps to reproduce any issues
 - Suggestions for improvements
@@ -56,7 +56,7 @@ We welcome constructive issue reports and feedback via my [GitHub Issues](https:
 ### 🔧 Clone the Repo
 
 ```bash
-git clone https://github.com/GuyWithAFrownyFace/brainlogs.git
+git clone https://github.com/jgreen-cli/brainlogs.git
 cd brainlogs
 ```
 
